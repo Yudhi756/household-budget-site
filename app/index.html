@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DompetKeluarga — Anggaran Rumah Tangga</title>
+<meta name="description" content="DompetKeluarga membantu keluarga mencatat pemasukan dan pengeluaran, menjaga anggaran tiap kategori, dan melihat laporan bulanan — semua tersimpan di perangkat sendiri.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">Rp</span>
+      <span class="brand-text"><strong>DompetKeluarga</strong><small>Anggaran rumah tangga</small></span>
+    </a>
+    <nav class="mainnav" aria-label="Navigasi utama">
+      <a href="#/" data-nav="dashboard">Beranda</a>
+      <a href="#/transaksi" data-nav="transaksi">Transaksi</a>
+      <a href="#/anggaran" data-nav="anggaran">Anggaran</a>
+      <a href="#/laporan" data-nav="laporan">Laporan</a>
+      <a href="#/pengaturan" data-nav="pengaturan">Pengaturan</a>
+    </nav>
+    <a class="btn btn-primary topbar-cta" href="#/transaksi?baru=1">+ Tambah Transaksi</a>
+  </div>
+</header>
+<main id="view" class="wrap" aria-live="polite"></main>
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>DompetKeluarga</strong> — data tersimpan di peramban Anda sendiri (localStorage). Tidak ada akun, tidak ada data yang dikirim ke mana pun.</p>
+    <p class="footer-note">Dibuat untuk keluarga Indonesia: semua angka dalam Rupiah, semua tanggal mengikuti kalender setempat.</p>
+  </div>
+</footer>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
